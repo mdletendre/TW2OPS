@@ -24,13 +24,14 @@
       <input type="submit" name="submit" value="Submit" />
 </form>
 <?php
+//Database=TW2OPS;Data Source=us-cdbr-azure-east2-d.cloudapp.net;User Id=b154ccbd0e3670;Password=779061d6
     // DB connection info
     //TODO: Update the values for $host, $user, $pwd, and $db
     //using the values you retrieved earlier from the portal.
-    $host = "value of Data Source";
-    $user = "value of User Id";
-    $pwd = "value of Password";
-    $db = "value of Database";
+    $host = "us-cdbr-azure-east2-d.cloudapp.net";
+    $user = "b154ccbd0e3670";
+    $pwd = "779061d6";
+    $db = "TW2OPS";
     // Connect to database.
     try {
         $conn = new PDO( "mysql:host=$host;dbname=$db", $user, $pwd);
